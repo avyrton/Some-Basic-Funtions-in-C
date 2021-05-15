@@ -37,7 +37,7 @@ static void	ft_go_nxtw(char **nxt_w, unsigned int *nxt_w_l, char c)
 {
 	unsigned int	k;
 
-	*nxt_w += *nxt_w_l;
+	*nxt_w = *nxt_w + *nxt_w_l;
 	*nxt_w_l = 0;
 	k = 0;
 	while (**nxt_w && **nxt_w == c)
