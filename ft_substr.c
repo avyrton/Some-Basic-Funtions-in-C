@@ -4,22 +4,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	char	*final;
+	char	*novi;
 	
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-	final = malloc(sizeof(char))
-	if (i < star)
+	novi = final
+	if (ft_strlen(s) < star)
 	{
-		if (!final)
+		if (!(final = malloc(sizeof(char))))
 			return (NULL);
 		*final = '\0'
 		return (final);
 	}
-	else if (s)
+	else while (*s && len)
 	{
-		return (ft_strndup(&s[start], len));
+		*novi++ = s[start++];
+		len--;
+		return (ft_strdup(novi))
 	}
 	else
 		return (NULL);
